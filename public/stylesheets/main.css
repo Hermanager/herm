@@ -1,0 +1,25 @@
+.mockup-wrapper {
+    margin-top: 180px;
+    overflow: hidden;
+}
+
+.logo {
+    height: 50px !important;
+    width: 50px !important;
+
+}
+.device-container {
+    max-width: none;
+}
+.text-primary1 {
+    color: #fdcc52;
+}
+.text-mid {
+    text-align: center;
+}
+.header-icons a {
+    padding-left: 15px;
+}
+.footer .love {
+    color: red;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "herm",
+  "version": "1.0.0",
+  "description": "Bringing Women Together | Together in Your Pursuit",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hermanager/herm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hermanager/herm/issues"
+  },
+  "homepage": "https://github.com/Hermanager/herm#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "pug": "^2.0.3"
+  }
+}
