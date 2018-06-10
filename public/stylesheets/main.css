@@ -23,3 +23,6 @@
 .footer .love {
     color: red;
 }
+section.cta .cta-content h2 {
+    max-width: 550px;
+}
