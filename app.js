@@ -40,8 +40,8 @@ app.use(function(err, req, res, next) {
 module.exports = app;
 
 // for server 
-// http.createServer(app).listen(80);
+http.createServer(app).listen(80);
 
-app.listen(8000 , ()=>{
-  console.log('Server has started on port 8000.')
-}); 
+// app.listen(8000 , ()=>{
+//   console.log('Server has started on port 8000.')
+// }); 
