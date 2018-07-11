@@ -19,16 +19,14 @@ html(lang='en')
     // Custom styles for this template
     link(href='/stylesheets/new-age-min.css', rel='stylesheet')
 
-    link(href='/stylesheets/main.css', rel='stylesheet')
+    link(href='/stylesheets/index.css', rel='stylesheet')
 
     title=title
     block styles
-  body#page-top
+  body
     // Navigation
-    nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
+    nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.navbar-custom
       .container
-        a#scroll1.navbar-brand.js-scroll-trigger(href='#page-top')
-            strong herM
         a#scroll2.navbar-brand.js-scroll-trigger(href='#page-top') 
             img.logo(src='img/herm-logo2.png', alt='')
         button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
@@ -36,183 +34,16 @@ html(lang='en')
         #navbarResponsive.collapse.navbar-collapse
           ul.navbar-nav.ml-auto
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#download') Download
+              a.nav-link.js-scroll-trigger(href='/#download') Download
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#features') Features
+              a.nav-link.js-scroll-trigger(href='/#features') Features
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#connect') Connect
+              a.nav-link.js-scroll-trigger(href='/#connect') Connect
             li.nav-item
-              a.nav-link.js-scroll-trigger(href='#contact') Contact
-    header.masthead
-      .container.h-100
-        .row.h-100
-          .col-lg-6.my-auto
-            .header-content.mx-auto
-              h2.mb-5
-                | Bringing Women Together 
-                br
-                | Together in Your Pursuit
-              a.btn.btn-outline.btn-xl.js-scroll-trigger(href='#download') Join Herm for Free!
-          .col-lg-6.my-auto
-            .device-container
-              .device-mockup.iphone6_plus.portrait.white
-                .device.mockup-wrapper
-                  .screen
-                    // Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!
-                    img.img-fluid(src='img/demo-screen-1.jpg', alt='')
-                  .button
-                    // You can hook the "home button" to some JavaScript events or just remove it
-    section#download.download.bg-primary.text-center
-      .container
-        .row
-          .col-md-8.mx-auto
-            h2.section-heading Discover what all the buzz is about!
-            p We will be launching our app on july 28.
-            p Be the first to get the app and earn a chance to win a voucher worth $100 .
-            .badges
-              a.badge-link(href='#')
-                img(src='img/google-play-badge.svg', alt='')
-              a.badge-link(href='#')
-                img(src='img/app-store-badge.svg', alt='')
-    section#features.features
-      .container
-        .section-heading.text-center
-          h2 Unlimited Features, Unlimited Exploration
-          p.text-muted Easy to use & get used to.
-          hr
-        .row
-          .col-lg-4.my-auto
-            .device-container
-              .device-mockup.iphone6_plus.portrait.white
-                .device
-                  .screen
-                    // Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!
-                    img.img-fluid(src='img/demo-screen-1.jpg', alt='')
-                  .button
-                    // You can hook the "home button" to some JavaScript events or just remove it
-          .col-lg-8.my-auto
-            .container-fluid
-              .row
-                .col-lg-6
-                  .feature-item
-                    i.icon-screen-smartphone.text-primary
-                    h3 Lets Explore
-                    //- p.text-muted Ready to use HTML/CSS device mockups, no Photoshop required!
-                .col-lg-6
-                  .feature-item
-                    i.icon-camera.text-primary
-                    h3 Safety With Simulation
-                    //- p.text-muted Put an image, video, animation, or anything else in the screen!
-              .row
-                .col-lg-6
-                  .feature-item
-                    i.icon-heart.text-primary
-                    h3 Made with Love
-                    //- p.text-muted As always, this theme is free to download and use for any purpose!
-                .col-lg-6
-                  .feature-item
-                    i.icon-lock-open.text-primary
-                    h3 Easy to USe
-                    //- p.text-muted Since this theme is MIT licensed, you can use it commercially!
+              a.nav-link.js-scroll-trigger(href='/#contact') Contact
+            li.nav-item
+              a.nav-link.js-scroll-trigger(href='#team') Team
     block content
-    //- section#contact.contact.bg-primary
-    section#quote.download.bg-primary.text-center
-        .container
-            br
-            div(class='row')
-                div(class='col-md-offset-2')
-                div(class='col-md-12')
-                    #carouselExampleIndicators.carousel.slide(data-ride='carousel')
-                        //- ol.carousel-indicators
-                        //-     li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
-                        //-     li(data-target='#carouselExampleIndicators', data-slide-to='1')
-                        .carousel-inner
-                            .carousel-item.active
-                                
-                                    
-                                h3.section-heading
-                                    | "We believe all of us are dots laid out in the world, which can only be connected by common interests. We want to connect those dots & create an inclusive environment."
-                                    //- i.fa.fa-question(style='color:brown;')
-                                //- p 
-                            .carousel-item
-                                
-                                    
-                                h3.section-heading
-                                    | "We aggregate all services on one platform and connect women who have similar interests. We help you overcome excuses, keep you motivated and help you pursue your interests."
-                                //-     i.fa.fa-question(style='color:brown;')
-                                //- p 
-                        //- a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
-                        //-     span.carousel-control-prev-icon(aria-hidden='true')
-                        //-     span.sr-only Previous
-                        //- a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
-                        //-     span.carousel-control-next-icon(aria-hidden='true')
-                        //-     span.sr-only Next
-
-    //- section#services
-    //-     .container
-    //-         .row
-    //-             .col-lg-12.text-center
-    //-                 h2.section-heading At Your Service
-    //-                 hr.primary
-    //-                 br
-    //-     .container
-    //-         .row
-    //-             .col-lg-3.col-md-3.text-center
-    //-                 .service-box
-    //-                     i.fa.fa-4x.fa-users.wow.bounceIn.text-primary1
-    //-                     h3 One Plateform
-    //-                     p.text-muted Our templates are updated regularly so they don't break.
-    //-             .col-lg-3.col-md-3.text-center
-    //-                 .service-box
-    //-                     i.fa.fa-4x.fa-binoculars.wow.bounceIn.text-primary1(data-wow-delay='.1s')
-    //-                     h3 AR / VR
-    //-                     p.text-muted You can use this theme as is, or you can make changes!
-    //-             .col-lg-3.col-md-3.text-center
-    //-                 .service-box
-    //-                     i.fa.fa-4x.fa-handshake-o.wow.bounceIn.text-primary1(data-wow-delay='.2s')
-    //-                     h3 Always With You
-    //-                     p.text-muted We update dependencies to keep things fresh.
-    //-             .col-lg-3.col-md-3.text-center
-    //-                 .service-box
-    //-                     i.fa.fa-4x.fa-heart.wow.bounceIn.text-primary1(data-wow-delay='.3s')
-    //-                     h3 Made with Love
-    //-                     p.text-muted You have to make your websites with love these days!
-
-    section.cta#connect
-      .cta-content
-        .container
-          h2
-            | Stop hesitating.
-            br
-            | Start persuing.
-          a.btn.btn-outline.btn-xl.js-scroll-trigger(href='#contact') Let's Get Started!
-      .overlay
-    section#contact.contact.bg-primary
-      .container
-        h2
-          | We 
-          i.fa.fa-heart
-          |           new friends!
-        ul.list-inline.list-social
-          li.list-inline-item.social-twitter
-            a(href='#')
-              i.fa.fa-twitter
-          li.list-inline-item.social-facebook
-            a(href='https://www.facebook.com/HerM-269175643830503/?modal=admin_todo_tour')
-              i.fa.fa-facebook(aria-hidden='true')
-          li.list-inline-item.social-google-plus
-            a(href='https://plus.google.com/u/0/b/115669083873905775962/115669083873905775962')
-              i.fa.fa-google-plus
-    //- footer
-    //-   .container
-    //-     p © Your Website 2018. All Rights Reserved.
-    //-     ul.list-inline
-    //-       li.list-inline-item
-    //-         a(href='#') Privacy
-    //-       li.list-inline-item
-    //-         a(href='#') Terms
-    //-       li.list-inline-item
-    //-         a(href='#') FAQ
     footer.footer
         .container
             br
@@ -265,25 +96,5 @@ html(lang='en')
     // Custom scripts for this template
     script(src='/scripts/herm.min.js')
     
-    //- script for switching logo and text
-    script.
-        $(document).ready(function() {
-            $("#scroll2").hide();
-            $("#scroll1").show();
-        });
-    script.
-        $(window).scroll( function() {
-            var scrollPosition = $(window).scrollTop();
-            if(scrollPosition <=80) {
-                $("#scroll2").hide();
-                $("#scroll1").show();
-                //show text
-            } 
-            else if (scrollPosition >80) {
-                
-                $("#scroll2").show();
-                $("#scroll1").hide();
-                //show logo
-            }
-        });
+
     block scripts
